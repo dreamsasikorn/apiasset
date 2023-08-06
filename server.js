@@ -29,20 +29,6 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something broke!')
 })
 
-
-// const logginMiddleware = (req, res, next) => {
-//     if (req.body.username === 'dreamsasikorn@gmail.com') {
-//         next();
-//     } else {
-//         res.send("Wrong username and password")
-//         //ถ้า username password ไม่ตรงให้ส่งว่า Wrong username and password
-//     }
-// }
-
-// app.use('/route', logginMiddleware, route);
-
-
-
 app.listen(port, () => {
     console.log("running on port :" + `${port}`);
 });
