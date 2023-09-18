@@ -3,7 +3,7 @@ const app = express()
 // cross origin
 const cors = require('cors');
 const { urlencoded } = require('express');
-const port = 3003
+const port = 74
 const route = require('./routes/index')
 
 const bodyParser = require('body-parser');
